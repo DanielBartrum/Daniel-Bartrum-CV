@@ -1,0 +1,172 @@
+@use "variables" as var;
+
+/* Load Bootstrap */
+$primary: #dfd5ca;
+$secondary: #336A89;
+$link-color: #003b92;
+$card-height: 100%;
+@import "~bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+/* General CSS */
+html, body { 
+    min-width: 300px; 
+}
+
+section { 
+    padding: 2em 0;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+    text-align: center;
+}
+
+.card {
+    .card-top-logo {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 10%;
+        border: 3px solid #e9ecef;
+        line-height: 150px;
+        font-size: 1.25em;
+        color: #6c757d;
+    }
+}
+
+caption {
+    color: $gray-900;
+}
+
+/* Header and Footer */
+header #menu, footer {
+    background: $gray-800;
+    color: $white;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary;
+        }
+    }
+    
+    a.nav-link {
+        margin: 0 0.25em;
+        border-bottom: 3px solid transparent;
+
+        &:hover, &:focus {
+            color: $white;
+            border-color: $gray-400;
+        }
+        
+        &.active, &.active:hover, &.active:focus, &:active {
+            border-color: $primary;
+        }
+    }
+
+    .db-icon {
+        display: block;
+        float: left;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin: 8px;
+        background: $primary;
+        border-radius: 100%;
+        text-align: center;
+        color: $gray-900;
+    }
+}
+
+/* Sectional CSS */
+
+// Hero image section
+#start {
+    @include var.hero-image-fill;
+    background: url('../files/hero-image.jpg');
+    background-size: cover;
+
+    &::before {
+        @include var.hero-image-fill;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        background: var.$colour-transparent-white;
+        content: ' ';
+    }
+
+    .caption {
+        background: var.$colour-transparent-black;
+        color: $white;
+        z-index: 10;
+        border-radius: 10px;
+
+        h1 span {
+            font-size: 0.3em;
+        }        
+    }
+}
+
+// About me section
+#about-me {
+    background: var.$colour-about-me;
+    
+    #technical-experience-further-info {
+        display: none;
+    }
+}
+
+// Employment section
+#employment {
+    background: var.$colour-employment;
+    color: $white;
+
+    .card, .modal {
+        color: $gray-900;
+    }
+    
+    .non-developer {
+        display: none;
+    }
+}
+
+// Education section
+#education {
+    background: var.$colour-education;
+}
+
+// Portfolio section
+#portfolio {
+    background: var.$colour-portfolio;
+    background: var.$colour-portfolio-gradient;
+    
+    .carousel-item {
+        .carousel-caption {
+            background: var.$colour-transparent-black;
+            color: $white;
+        }
+    }
+}
+
+/* Desktop-only styling */
+@include media-breakpoint-up(md) {
+    section { 
+        padding: 6em 0;
+    }
+
+    header #menu {
+        background: var.$colour-transparent-black;
+
+        a.nav-link:hover {
+            border-color: $gray-600;
+        }
+    }
+    
+    #employment .card {
+        .card-title, .card-text {
+            min-height: 2em;
+        }
+    }
+}
+

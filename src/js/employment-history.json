@@ -1,0 +1,62 @@
+[
+    {
+        "position": "Web Developer",
+        "employer": "Borough Council of King's Lynn & West Norfolk",
+        "employerLogo": "bcklwn.png",
+        "website": "https://www.west-norfolk.gov.uk/",
+        "from": "January 2020",
+        "to": "Date",
+        "duties": "Maintain, develop and manage the borough council’s vast array of websites, sub-sites, API integration, eforms and website functionality. Also the primary technical contact for the IEG4 forms & CXM platform",
+        "isDeveloper": true
+    },
+    {
+        "position": "Web Development Officer",
+        "employer": "Borough Council of King's Lynn & West Norfolk",
+        "employerLogo": "bcklwn.png",
+        "website": "https://www.west-norfolk.gov.uk/",
+        "from": "July 2016",
+        "to": "January 2020",
+        "duties": "Maintain, develop and manage the borough council’s vast array of websites, sub-sites, API integration, eforms and website functionality. Also the primary technical contact for the IEG4 forms & CXM platform",
+        "isDeveloper": true
+    },
+    {
+        "position": "Junior Developer (.NET)",
+        "employer": "Wellpoint Group Limited",
+        "employerLogo": "wellpoint.png",
+        "website": "https://well.me/",
+        "from": "October 2015",
+        "to": "July 2016",
+        "duties": "Manage, maintain and update the various software which form part of the core of Wellpoint’s business.",
+        "isDeveloper": true
+    },
+    {
+        "position": "IT Technical Assistant (Work Experience)",
+        "employer": "Borough Council of King's Lynn & West Norfolk",
+        "employerLogo": "bcklwn.png",
+        "website": "https://www.west-norfolk.gov.uk/",
+        "from": "June 2013",
+        "to": "June 2013",
+        "duties": " Assist office staff and councillors with any technical issues. Deploy new hardware and software.",
+        "isDeveloper": false
+    },
+    {
+        "position": "Delivery Driver",
+        "employer": "Pizza Hut Delivery",
+        "employerLogo": "pizza-hut.png",
+        "website": "https://www.pizzahut.co.uk/huts/uk-1/8094-kings-lynn/",
+        "from": "September 2014",
+        "to": "October 2015",
+        "duties": "Deliver freshly cooked Pizzas within a 5 mile radius of shop. When not driving, other duties included cleaning, serving customers and preparatory food work.",
+        "isDeveloper": false
+    },
+    {
+        "position": "Newspaper Distributor",
+        "employer": "Jayars Distribution Limited",
+        "employerLogo": "jayars-distribution.jpg",
+        "website": null,
+        "from": "February 2008",
+        "to": "September 2009",
+        "duties": "Deliver free local newspaper to 230 homes in a nearby village weekly. Preparatory work included filling papers with advertisement leaflets.",
+        "isDeveloper": false
+    }
+]
